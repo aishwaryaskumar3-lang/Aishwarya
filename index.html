@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aishwarya S Kumar | Portfolio</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#f1f5f9;
+    color:#0f172a;
+    line-height:1.6;
+}
+
+/* NAVBAR */
+nav{
+    background:#0f172a;
+    color:white;
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:15px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    font-size:14px;
+}
+
+/* HERO */
+.hero{
+    text-align:center;
+    padding:50px 20px;
+    background:#e2e8f0;
+}
+
+.hero h2 span{
+    color:#2563eb;
+}
+
+/* SECTIONS */
+section{
+    padding:45px 10%;
+}
+
+.title{
+    text-align:center;
+    color:#2563eb;
+    margin-bottom:20px;
+    font-size:22px;
+}
+
+/* TEXT CENTER */
+.center{
+    text-align:center;
+    max-width:750px;
+    margin:auto;
+}
+
+/* SKILLS */
+.skills{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+}
+
+.skill{
+    background:#e2e8f0;
+    padding:8px 12px;
+    border-radius:5px;
+}
+
+/* GRID */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:15px;
+}
+
+.card{
+    border:1px solid #cbd5e1;
+    padding:15px;
+    border-radius:6px;
+    background:white;
+}
+
+/* BUTTON */
+.btn{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:8px 15px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:15px;
+    background:#0f172a;
+    color:white;
+    margin-top:20px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <h1>Aishwarya S Kumar</h1>
+    <ul>
+        <li><a href="#objective">Objective</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#subjects">Subjects</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+    <h2>Hello, I'm <span>Aishwarya</span></h2>
+    <p>Computer Science Student</p>
+</div>
+
+<!-- OBJECTIVE -->
+<section id="objective">
+    <div class="title">Career Objective</div>
+    <div class="center">
+        To build a strong career in the field of computer science by improving
+        my programming, problem-solving, and technical skills while contributing
+        to innovative projects.
+    </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+    <div class="title">Technical Skills</div>
+    <div class="skills">
+        <div class="skill">C Programming</div>
+        <div class="skill">Python</div>
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">GitHub</div>
+    </div>
+</section>
+
+<!-- SUBJECTS -->
+<section id="subjects">
+    <div class="title">Subjects Studied</div>
+    <div class="grid">
+        <div class="card">Data Structures</div>
+        <div class="card">Database Concepts</div>
+        <div class="card">Cloud Computing</div>
+        <div class="card">Computer Networks</div>
+        <div class="card">Operating Systems</div>
+    </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+    <div class="title">Projects / Assignments</div>
+    <div class="grid">
+        <div class="card">
+            <h3>Portfolio Website</h3>
+            <p>Designed and developed using HTML & CSS.</p>
+        </div>
+
+        <div class="card">
+            <h3>Pandas & NumPy Tasks</h3>
+            <p>Implemented indexing and filtering programs.</p>
+        </div>
+
+        <div class="card">
+            <h3>Networking Study</h3>
+            <p>Learned virtualization and data center basics.</p>
+        </div>
+    </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+    <div class="title">Education</div>
+    <div class="center">
+        Bachelor of Computer Science<br>
+        Your College Name
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+    <div class="title">Contact</div>
+    <div class="center">
+        <a href="mailto:aishwaryaskumar3@gmail.com">
+            <button class="btn">aishwaryaskumar3@gmail.com</button>
+        </a>
+    </div>
+</section>
+
+<footer>
+    © 2026 Aishwarya S Kumar
+</footer>
+
+</body>
+              </html>
