@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Aishwarya S Kumar | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+/* ========= BODY BACKGROUND ========= */
+body{
+background:linear-gradient(135deg,#dfe9f3,#f6f9fc,#e7edf5);
+overflow-x:hidden;
+color:#1e2a38;
+}
+
+/* colorful blur shapes */
+body::before,
+body::after{
+content:"";
+position:fixed;
+border-radius:50%;
+filter:blur(100px);
+z-index:-1;
+opacity:.45;
+}
+
+body::before{
+width:450px;
+height:450px;
+background:#5eb2f2;
+top:-120px;
+left:-150px;
+}
+
+body::after{
+width:450px;
+height:450px;
+background:#c58cff;
+bottom:-150px;
+right:-150px;
+}
+
+/* ========= HEADER ========= */
+header{
+position:fixed;
+width:100%;
+top:0;
+padding:18px 70px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+background:rgba(255,255,255,0.45);
+backdrop-filter:blur(12px);
+}
+
+.logo{
+font-weight:600;
+font-size:22px;
+}
+
+nav a{
+margin-left:25px;
+text-decoration:none;
+color:#333;
+font-size:14px;
+}
+
+/* ========= HERO ========= */
+.hero{
+height:100vh;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:0 80px;
+gap:60px;
+}
+
+.hero-text h1{
+font-size:3.5rem;
+}
+
+.hero-text p{
+margin:20px 0 30px;
+color:#555;
+}
+
+.btn{
+background:#5eb2f2;
+color:white;
+padding:12px 30px;
+border-radius:30px;
+text-decoration:none;
+box-shadow:0 10px 20px rgba(94,178,242,.4);
+}
+
+/* profile image */
+.profile-pic{
+width:280px;
+height:280px;
+border-radius:50%;
+object-fit:cover;
+border:6px solid white;
+box-shadow:0 20px 40px rgba(0,0,0,.25);
+}
+
+/* ========= SECTIONS ========= */
+section{
+padding:90px 70px;
+max-width:1100px;
+margin:auto;
+}
+
+h2{
+text-align:center;
+margin-bottom:40px;
+}
+
+/* ========= GRID ========= */
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+
+/* ========= COLORED CARDS WITH BORDERS ========= */
+.card{
+padding:25px;
+border-radius:14px;
+background:rgba(255,255,255,0.7);
+backdrop-filter:blur(10px);
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+transition:.3s;
+border-left:6px solid #5eb2f2; /* colored border */
+}
+
+.card:hover{
+transform:translateY(-6px);
+}
+
+/* different pastel colors */
+.card:nth-child(2){border-left-color:#ff9aa2;}
+.card:nth-child(3){border-left-color:#ffd166;}
+.card:nth-child(4){border-left-color:#9bf6ff;}
+.card:nth-child(5){border-left-color:#bdb2ff;}
+.card:nth-child(6){border-left-color:#a0e7e5;}
+
+/* ========= SECTION BACKGROUND TINTS ========= */
+#skills{background:rgba(94,178,242,.05);border-radius:20px;}
+#projects{background:rgba(189,178,255,.05);border-radius:20px;}
+#education{background:rgba(255,209,102,.05);border-radius:20px;}
+#certifications{background:rgba(255,154,162,.05);border-radius:20px;}
+
+/* ========= CONTACT ========= */
+.contact{
+text-align:center;
+padding:80px 20px;
+}
+
+/* ========= FOOTER ========= */
+footer{
+text-align:center;
+padding:25px;
+color:#555;
+}
+
+/* ========= MOBILE ========= */
+@media(max-width:900px){
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="logo">Aishwarya.</div>
+<nav>
+<a href="#skills">Skills</a>
+<a href="#projects">Projects</a>
+<a href="#education">Education</a>
+<a href="#certifications">Certifications</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+
+<!-- HERO -->
+<section class="hero">
+<div class="hero-text">
+<h1>Aishwarya S Kumar</h1>
+<p>
+BCA Student • Cloud Computing Enthusiast • Full Stack Developer<br>
+Building modern & scalable web applications
+</p>
+<a href="#contact" class="btn">Contact Me</a>
+</div>
+
+<div>
+<img src="profile.jpg" class="profile-pic" alt="Profile Photo">
+</div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="skills">
+<h2>Skills</h2>
+<div class="grid">
+<div class="card">HTML • CSS • JavaScript</div>
+<div class="card">React</div>
+<div class="card">Node.js • Express</div>
+<div class="card">MongoDB</div>
+<div class="card">Cloud Computing</div>
+<div class="card">Git & GitHub</div>
+</div>
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2>Projects</h2>
+<div class="grid">
+<div class="card">Personal Portfolio Website</div>
+<div class="card">Task Manager App</div>
+<div class="card">Blog Website</div>
+<div class="card">Quiz Application</div>
+</div>
+</section>
+
+
+<!-- EDUCATION -->
+<section id="education">
+<h2>Education</h2>
+<div class="card">
+BCA – Cloud Computing<br>
+Kristu Jayanti University<br>
+2023 – 2026
+</div>
+</section>
+
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+<h2>Certifications</h2>
+<div class="grid">
+<div class="card">CSS & HTML Certification</div>
+<div class="card">Frontend Development</div>
+<div class="card">Backend Development</div>
+</div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+<h2>Contact</h2>
+<p>aishwaryaskumar@gmail.com</p>
+<p>Bengaluru, India</p>
+</section>
+
+<footer>
+© 2026 Aishwarya S Kumar
+</footer>
+
+</body>
+  </html>
