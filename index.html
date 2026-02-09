@@ -164,7 +164,47 @@ padding:20px;
 background:#2e7d32;
 color:white;
 }
+/* ===== Background Gradient ===== */
+body {
+    background: linear-gradient(135deg, #f0f7f4, #dff1e4);
+}
 
+/* ===== Section Spacing ===== */
+section {
+    padding: 60px 20px;
+}
+
+/* ===== Card Upgrade ===== */
+.card, .skill-box, .project-box, .edu-box, .cert-box {
+    background: white;
+    border-radius: 12px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Effect */
+.card:hover, .skill-box:hover, .project-box:hover, 
+.edu-box:hover, .cert-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* ===== Title Style ===== */
+h2 {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 25px;
+}
+
+h2::after {
+    content: "";
+    width: 50%;
+    height: 3px;
+    background: #2e7d32;
+    position: absolute;
+    left: 25%;
+    bottom: -8px;
+    border-radius: 10px;
+  }
 </style>
 </head>
 
